@@ -9,3 +9,4 @@ tp @p[distance=..2,name=russellwalker21] 191 110 187
 tp @p[distance=..2,name=Tianfei] 191 110 315
 tp @p[distance=..2,name=Armitheo] 191 110 443
 tp @p[distance=..2,name=DouyuTV20120701] 191 110 571
+tp @p[distance=..2,name=RX78v] 319 110 59

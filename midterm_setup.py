@@ -31,6 +31,7 @@ class Rooms:
 
 
 nameList = ['appleseedorchard', 'WettestFrog', 'izofar', 'rx78v', 'DripOrDrown99', 
-            'papaseb', 'russellwalker21', 'Tianfei', 'Armitheo', 'DouyuTV20120701']
+            'papaseb', 'russellwalker21', 'Tianfei', 'Armitheo', 'DouyuTV20120701',
+            'RX78v']
 rooms = Rooms (6, 5)
 rooms.assign (nameList)
