@@ -20,3 +20,4 @@ tp @p[distance=..2,name=LaKoixFish] 447 110 315
 tp @p[distance=..2,name=Dummyc0m] 447 110 443
 tp @p[distance=..2,name=rf174919] 447 110 571
 tp @p[distance=..2,name=Trollium] 575 110 59
+tp @p[distance=..2,name=raphy2] 575 110 187

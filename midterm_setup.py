@@ -30,6 +30,6 @@ class Rooms:
         f.close()
 
 
-nameList = ['appleseedorchard', 'WettestFrog', 'izofar', 'rx78v', 'DripOrDrown99', 'papaseb', 'russellwalker21', 'Tianfei', 'Armitheo', 'DouyuTV20120701', 'RX78v', 'Omegatron', 'The1stDarkTower', 'Flightraid', 'Youcef_Tlm', 'Deter_Mined', 'flamegator', 'LaKoixFish', 'Dummyc0m', 'rf174919', 'Trollium']
+nameList = ['appleseedorchard', 'WettestFrog', 'izofar', 'rx78v', 'DripOrDrown99', 'papaseb', 'russellwalker21', 'Tianfei', 'Armitheo', 'DouyuTV20120701', 'RX78v', 'Omegatron', 'The1stDarkTower', 'Flightraid', 'Youcef_Tlm', 'Deter_Mined', 'flamegator', 'LaKoixFish', 'Dummyc0m', 'rf174919', 'Trollium', 'raphy2']
 rooms = Rooms (6, 5)
 rooms.assign (nameList)
