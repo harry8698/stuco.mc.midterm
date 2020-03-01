@@ -1,5 +1,13 @@
 import sys
 
+ROW = 6
+COL = 5
+ROW_DISTANCE = 128
+COL_DISTANCE = 128
+ANCHOR_X = 63
+ANCHOR_Y = 110
+ANCHOR_Z = 59
+
 class Coordinates:
     def __init__(self, x, y, z):
         self.x = x
@@ -21,12 +29,12 @@ class Player:
         return self.coordinates.z
     
     def toString(self):
-        return "{} : {} {} {}".format(self.name, self.getX(), self.getY(), self.getZ())
+        return '{} : {} {} {}'.format(self.name, self.getX(), self.getY(), self.getZ())
 
 class Rooms:
-    rowDistance = 128
-    colDistance = 128
-    anchor = Coordinates(63, 110, 59)
+    rowDistance = ROW_DISTANCE
+    colDistance = COL_DISTANCE
+    anchor = Coordinates(ANCHOR_X, ANCHOR_Y, ANCHOR_Z)
 
     def __init__(self, row, col):
         self.row = row
@@ -35,8 +43,8 @@ class Rooms:
 
     def assign(self, names):
         assert (len(names) < self.col * self.row)
-        f = open ('./midterm_setup.mcfunction', "w+")
-        f.write ("clear @p[distance=..2]\n")
+        f = open ('./midterm_setup.mcfunction', 'w+')
+        f.write ('clear @p[distance=..2]\n')
         i, j = 0, 0
         self.names = names
         for name in names:
@@ -45,7 +53,7 @@ class Rooms:
                                        self.anchor.z + self.colDistance * j)
             player = Player (name, coordinates)
             self.players[name] = player
-            f.write ("tp @p[distance=..1,name={}] {} {} {}\n".format(player.name, 
+            f.write ('tp @p[distance=..1,name={}] {} {} {}\n'.format(player.name, 
                                                                      player.getX(),
                                                                      player.getY(),
                                                                      player.getZ()))
@@ -56,24 +64,30 @@ class Rooms:
     def get(self, name):
         if (name in self.players):
             return self.players[name].toString()
-        return "Player not found"
+        return 'Player not found'
 
     def toString(self):
-        result = ""
+        result = ''
         for p in self.players.values():
-            result += p.toString() + "\n"
+            result += p.toString() + '\n'
         return result
+
+if ('-add' in sys.argv):
+    assert(len(sys.argv) == 3)
+    with open('./name_list.txt', 'a') as listFile:
+        listFile.writelines(sys.argv[2] + '\n')
 
 nameList = []
 with open('./name_list.txt', 'r') as listFile:
     Lines = listFile.readlines()
     for name in Lines:
         nameList.append(name.strip('\n'))
+print(nameList)
 
-rooms = Rooms (6, 5)
-rooms.assign (nameList)
+rooms = Rooms(ROW, COL)
+rooms.assign(nameList)
 
-if (len(sys.argv) == 2):
+if ('-v' in sys.argv):
+    print(rooms.toString())
+elif (len(sys.argv) == 2):
     print(rooms.get(sys.argv[1]))
-else:
-    print (rooms.toString())
