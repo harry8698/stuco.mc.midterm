@@ -21,3 +21,6 @@ tp @p[distance=..1,name=Dummyc0m] 447 110 443
 tp @p[distance=..1,name=rf174919] 447 110 571
 tp @p[distance=..1,name=Trollium] 575 110 59
 tp @p[distance=..1,name=raphy2] 575 110 187
+tp @p[distance=..1,name=stmjk] 575 110 315
+tp @p[distance=..1,name=Cloudberryz] 575 110 443
+tp @p[distance=..1,name=fredjoon] 575 110 571
