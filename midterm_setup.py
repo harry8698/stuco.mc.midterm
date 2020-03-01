@@ -68,7 +68,8 @@ class Rooms:
 nameList = ['appleseedorchard', 'WettestFrog', 'izofar', 'rx78v', 'DripOrDrown99', 'papaseb', 'russellwalker21', 'Tianfei', 'Armitheo', 'DouyuTV20120701', 'RX78v', 'Omegatron', 'The1stDarkTower', 'Flightraid', 'Youcef_Tlm', 'Deter_Mined', 'flamegator', 'LaKoixFish', 'Dummyc0m', 'rf174919', 'Trollium', 'raphy2', 'stmjk', 'Cloudberryz', 'fredjoon']
 rooms = Rooms (6, 5)
 rooms.assign (nameList)
-print (rooms.toString())
 
 if (len(sys.argv) == 2):
-    print(rooms.get(sys.argv[1], nameList))
+    print(rooms.get(sys.argv[1]))
+else:
+    print (rooms.toString())
