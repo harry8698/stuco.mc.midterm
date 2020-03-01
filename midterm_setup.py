@@ -63,9 +63,13 @@ class Rooms:
         for p in self.players.values():
             result += p.toString() + "\n"
         return result
-        
 
-nameList = ['appleseedorchard', 'WettestFrog', 'izofar', 'rx78v', 'DripOrDrown99', 'papaseb', 'russellwalker21', 'Tianfei', 'Armitheo', 'DouyuTV20120701', 'RX78v', 'Omegatron', 'The1stDarkTower', 'Flightraid', 'Youcef_Tlm', 'Deter_Mined', 'flamegator', 'LaKoixFish', 'Dummyc0m', 'rf174919', 'Trollium', 'raphy2', 'stmjk', 'Cloudberryz', 'fredjoon']
+nameList = []
+with open('./name_list.txt', 'r') as listFile:
+    Lines = listFile.readlines()
+    for name in Lines:
+        nameList.append(name.strip('\n'))
+
 rooms = Rooms (6, 5)
 rooms.assign (nameList)
 
