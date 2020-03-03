@@ -1,7 +1,7 @@
 import sys
 
-ROW = 6
-COL = 5
+ROW = 5
+COL = 6
 ROW_DISTANCE = 128
 COL_DISTANCE = 128
 ANCHOR_X = 63
@@ -42,7 +42,7 @@ class Rooms:
         self.players = {}
 
     def assign(self, names):
-        assert (len(names) < self.col * self.row)
+        assert (len(names) <= self.col * self.row)
         f = open ('./midterm_setup.mcfunction', 'w+')
         f.write ('clear @p[distance=..2]\n')
         i, j = 0, 0
