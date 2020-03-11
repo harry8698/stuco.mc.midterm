@@ -1,12 +1,5 @@
 import sys
-
-ROW = 5
-COL = 6
-ROW_DISTANCE = 128
-COL_DISTANCE = 128
-ANCHOR_X = 63
-ANCHOR_Y = 110
-ANCHOR_Z = 59
+import constants
 
 class Coordinates:
     def __init__(self, x, y, z):
@@ -32,9 +25,9 @@ class Player:
         return '{} : {} {} {}'.format(self.name, self.getX(), self.getY(), self.getZ())
 
 class Rooms:
-    rowDistance = ROW_DISTANCE
-    colDistance = COL_DISTANCE
-    anchor = Coordinates(ANCHOR_X, ANCHOR_Y, ANCHOR_Z)
+    rowDistance = constants.ROW_DISTANCE
+    colDistance = constants.COL_DISTANCE
+    anchor = Coordinates(constants.ANCHOR_X, constants.ANCHOR_Y, constants.ANCHOR_Z)
 
     def __init__(self, row, col):
         self.row = row
@@ -84,7 +77,7 @@ with open('./name_list.txt', 'r') as listFile:
         nameList.append(name.strip('\n'))
 print(nameList)
 
-rooms = Rooms(ROW, COL)
+rooms = Rooms(constants.ROW, constants.COL)
 rooms.assign(nameList)
 
 if ('-v' in sys.argv):
