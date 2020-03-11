@@ -71,6 +71,7 @@ class Rooms:
         timerString = 'execute if score @p[scores={{timer=0..}}] timer matches {} run '
         interval = 8
         delay = 4
+        threshold = 4
         f = open('./midterm_calcscore_setup.mcfunction', 'w+') 
         f.write('scoreboard players add @p[scores={timer=0..}] timer 1\n')
         i = 1
@@ -92,7 +93,12 @@ class Rooms:
                 f.write(timerString.format(interval * i + delay))
                 f.write('scoreboard players operation {} scores += {} {}\n'.format(name, name, color))
             f.write(timerString.format(interval * i + delay))
-            f.write('tellraw @p[scores={{timer=0..}}] [{{"text":"{}: ", "color":"aqua", "clickEvent":{{"action":"run_command","value":"/tp @p[scores={{timer=0..}}] {} {} {}"}}}},{{"score":{{"name":"{}","objective":"scores"}}, "color":"white"}}]\n'
+            f.write('execute if score {} scores matches {}.. run '.format(name, threshold))
+            f.write('tellraw @p[scores={{timer=0..}}] [{{"text":"{}: ", "color":"green", "clickEvent":{{"action":"run_command","value":"/tp @p {} {} {}"}}}},{{"score":{{"name":"{}","objective":"scores"}}, "color":"white"}}]\n'
+                    .format(name, player.getX(), player.getY(), player.getZ(), name))
+            f.write(timerString.format(interval * i + delay))
+            f.write('execute if score {} scores matches ..{} run '.format(name, threshold - 1))
+            f.write('tellraw @p[scores={{timer=0..}}] [{{"text":"{}: ", "color":"red", "clickEvent":{{"action":"run_command","value":"/tp @p {} {} {}"}}}},{{"score":{{"name":"{}","objective":"scores"}}, "color":"white"}}]\n'
                     .format(name, player.getX(), player.getY(), player.getZ(), name))
             i+=1
         f.write(timerString.format(interval * i))
