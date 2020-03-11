@@ -57,10 +57,10 @@ class Rooms:
 
     def calcScore(self):
         f = open('./midterm_calcscore.mcfunction', 'w+')
-        f.write('scoreboard objectives remove scores \nscoreboard objectives add scores\n')
+        f.write('scoreboard objectives remove scores \nscoreboard objectives add scores dummy\n')
 
         for color in constants.COLORS:
-            f.write('scoreboard objectives remove {} \nscoreboard objectives add {}\n'.format(color, color))
+            f.write('scoreboard objectives remove {} \nscoreboard objectives add {} dummy\n'.format(color, color))
         
         for name in self.players:
             player = self.players[name]

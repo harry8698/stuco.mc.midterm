@@ -1,29 +1,29 @@
 scoreboard objectives remove scores 
-scoreboard objectives add scores
+scoreboard objectives add scores dummy
 scoreboard objectives remove brown 
-scoreboard objectives add brown
+scoreboard objectives add brown dummy
 scoreboard objectives remove magenta 
-scoreboard objectives add magenta
+scoreboard objectives add magenta dummy
 scoreboard objectives remove pink 
-scoreboard objectives add pink
+scoreboard objectives add pink dummy
 scoreboard objectives remove purple 
-scoreboard objectives add purple
+scoreboard objectives add purple dummy
 scoreboard objectives remove cyan 
-scoreboard objectives add cyan
+scoreboard objectives add cyan dummy
 scoreboard objectives remove blue 
-scoreboard objectives add blue
+scoreboard objectives add blue dummy
 scoreboard objectives remove light_blue 
-scoreboard objectives add light_blue
+scoreboard objectives add light_blue dummy
 scoreboard objectives remove lime 
-scoreboard objectives add lime
+scoreboard objectives add lime dummy
 scoreboard objectives remove green 
-scoreboard objectives add green
+scoreboard objectives add green dummy
 scoreboard objectives remove yellow 
-scoreboard objectives add yellow
+scoreboard objectives add yellow dummy
 scoreboard objectives remove orange 
-scoreboard objectives add orange
+scoreboard objectives add orange dummy
 scoreboard objectives remove red 
-scoreboard objectives add red
+scoreboard objectives add red dummy
 scoreboard players set appleseedorchard scores 0
 scoreboard players set appleseedorchard brown 0
 execute if block 57 111 67 brown_wool run scoreboard players set appleseedorchard brown 1
@@ -431,7 +431,44 @@ scoreboard players operation DouyuTV20120701 scores += DouyuTV20120701 orange
 scoreboard players set DouyuTV20120701 red 0
 execute if block 196 111 579 red_wool run scoreboard players set DouyuTV20120701 red 1
 scoreboard players operation DouyuTV20120701 scores += DouyuTV20120701 red
-tellraw @p [{"text":"DouyuTV20120701: "},{"score":{"name":"DouyuTV20120701","objective":"scores"}}]scoreboard players set xxx scores 0
+tellraw @p [{"text":"DouyuTV20120701: "},{"score":{"name":"DouyuTV20120701","objective":"scores"}}]scoreboard players set pattysan scores 0
+scoreboard players set pattysan brown 0
+execute if block 185 111 707 brown_wool run scoreboard players set pattysan brown 1
+scoreboard players operation pattysan scores += pattysan brown
+scoreboard players set pattysan magenta 0
+execute if block 186 111 707 magenta_wool run scoreboard players set pattysan magenta 1
+scoreboard players operation pattysan scores += pattysan magenta
+scoreboard players set pattysan pink 0
+execute if block 187 111 707 pink_wool run scoreboard players set pattysan pink 1
+scoreboard players operation pattysan scores += pattysan pink
+scoreboard players set pattysan purple 0
+execute if block 188 111 707 purple_wool run scoreboard players set pattysan purple 1
+scoreboard players operation pattysan scores += pattysan purple
+scoreboard players set pattysan cyan 0
+execute if block 189 111 707 cyan_wool run scoreboard players set pattysan cyan 1
+scoreboard players operation pattysan scores += pattysan cyan
+scoreboard players set pattysan blue 0
+execute if block 190 111 707 blue_wool run scoreboard players set pattysan blue 1
+scoreboard players operation pattysan scores += pattysan blue
+scoreboard players set pattysan light_blue 0
+execute if block 191 111 707 light_blue_wool run scoreboard players set pattysan light_blue 1
+scoreboard players operation pattysan scores += pattysan light_blue
+scoreboard players set pattysan lime 0
+execute if block 192 111 707 lime_wool run scoreboard players set pattysan lime 1
+scoreboard players operation pattysan scores += pattysan lime
+scoreboard players set pattysan green 0
+execute if block 193 111 707 green_wool run scoreboard players set pattysan green 1
+scoreboard players operation pattysan scores += pattysan green
+scoreboard players set pattysan yellow 0
+execute if block 194 111 707 yellow_wool run scoreboard players set pattysan yellow 1
+scoreboard players operation pattysan scores += pattysan yellow
+scoreboard players set pattysan orange 0
+execute if block 195 111 707 orange_wool run scoreboard players set pattysan orange 1
+scoreboard players operation pattysan scores += pattysan orange
+scoreboard players set pattysan red 0
+execute if block 196 111 707 red_wool run scoreboard players set pattysan red 1
+scoreboard players operation pattysan scores += pattysan red
+tellraw @p [{"text":"pattysan: "},{"score":{"name":"pattysan","objective":"scores"}}]scoreboard players set xxx scores 0
 scoreboard players set xxx brown 0
 execute if block 441 111 707 brown_wool run scoreboard players set xxx brown 1
 scoreboard players operation xxx scores += xxx brown
@@ -468,44 +505,7 @@ scoreboard players operation xxx scores += xxx orange
 scoreboard players set xxx red 0
 execute if block 452 111 707 red_wool run scoreboard players set xxx red 1
 scoreboard players operation xxx scores += xxx red
-tellraw @p [{"text":"xxx: "},{"score":{"name":"xxx","objective":"scores"}}]scoreboard players set RX78v scores 0
-scoreboard players set RX78v brown 0
-execute if block 313 111 67 brown_wool run scoreboard players set RX78v brown 1
-scoreboard players operation RX78v scores += RX78v brown
-scoreboard players set RX78v magenta 0
-execute if block 314 111 67 magenta_wool run scoreboard players set RX78v magenta 1
-scoreboard players operation RX78v scores += RX78v magenta
-scoreboard players set RX78v pink 0
-execute if block 315 111 67 pink_wool run scoreboard players set RX78v pink 1
-scoreboard players operation RX78v scores += RX78v pink
-scoreboard players set RX78v purple 0
-execute if block 316 111 67 purple_wool run scoreboard players set RX78v purple 1
-scoreboard players operation RX78v scores += RX78v purple
-scoreboard players set RX78v cyan 0
-execute if block 317 111 67 cyan_wool run scoreboard players set RX78v cyan 1
-scoreboard players operation RX78v scores += RX78v cyan
-scoreboard players set RX78v blue 0
-execute if block 318 111 67 blue_wool run scoreboard players set RX78v blue 1
-scoreboard players operation RX78v scores += RX78v blue
-scoreboard players set RX78v light_blue 0
-execute if block 319 111 67 light_blue_wool run scoreboard players set RX78v light_blue 1
-scoreboard players operation RX78v scores += RX78v light_blue
-scoreboard players set RX78v lime 0
-execute if block 320 111 67 lime_wool run scoreboard players set RX78v lime 1
-scoreboard players operation RX78v scores += RX78v lime
-scoreboard players set RX78v green 0
-execute if block 321 111 67 green_wool run scoreboard players set RX78v green 1
-scoreboard players operation RX78v scores += RX78v green
-scoreboard players set RX78v yellow 0
-execute if block 322 111 67 yellow_wool run scoreboard players set RX78v yellow 1
-scoreboard players operation RX78v scores += RX78v yellow
-scoreboard players set RX78v orange 0
-execute if block 323 111 67 orange_wool run scoreboard players set RX78v orange 1
-scoreboard players operation RX78v scores += RX78v orange
-scoreboard players set RX78v red 0
-execute if block 324 111 67 red_wool run scoreboard players set RX78v red 1
-scoreboard players operation RX78v scores += RX78v red
-tellraw @p [{"text":"RX78v: "},{"score":{"name":"RX78v","objective":"scores"}}]scoreboard players set Omegatron scores 0
+tellraw @p [{"text":"xxx: "},{"score":{"name":"xxx","objective":"scores"}}]scoreboard players set Omegatron scores 0
 scoreboard players set Omegatron brown 0
 execute if block 313 111 195 brown_wool run scoreboard players set Omegatron brown 1
 scoreboard players operation Omegatron scores += Omegatron brown
@@ -653,7 +653,44 @@ scoreboard players operation Youcef_Tlm scores += Youcef_Tlm orange
 scoreboard players set Youcef_Tlm red 0
 execute if block 324 111 579 red_wool run scoreboard players set Youcef_Tlm red 1
 scoreboard players operation Youcef_Tlm scores += Youcef_Tlm red
-tellraw @p [{"text":"Youcef_Tlm: "},{"score":{"name":"Youcef_Tlm","objective":"scores"}}]scoreboard players set Deter_Mined scores 0
+tellraw @p [{"text":"Youcef_Tlm: "},{"score":{"name":"Youcef_Tlm","objective":"scores"}}]scoreboard players set CurlyQuesadillas scores 0
+scoreboard players set CurlyQuesadillas brown 0
+execute if block 313 111 707 brown_wool run scoreboard players set CurlyQuesadillas brown 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas brown
+scoreboard players set CurlyQuesadillas magenta 0
+execute if block 314 111 707 magenta_wool run scoreboard players set CurlyQuesadillas magenta 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas magenta
+scoreboard players set CurlyQuesadillas pink 0
+execute if block 315 111 707 pink_wool run scoreboard players set CurlyQuesadillas pink 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas pink
+scoreboard players set CurlyQuesadillas purple 0
+execute if block 316 111 707 purple_wool run scoreboard players set CurlyQuesadillas purple 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas purple
+scoreboard players set CurlyQuesadillas cyan 0
+execute if block 317 111 707 cyan_wool run scoreboard players set CurlyQuesadillas cyan 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas cyan
+scoreboard players set CurlyQuesadillas blue 0
+execute if block 318 111 707 blue_wool run scoreboard players set CurlyQuesadillas blue 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas blue
+scoreboard players set CurlyQuesadillas light_blue 0
+execute if block 319 111 707 light_blue_wool run scoreboard players set CurlyQuesadillas light_blue 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas light_blue
+scoreboard players set CurlyQuesadillas lime 0
+execute if block 320 111 707 lime_wool run scoreboard players set CurlyQuesadillas lime 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas lime
+scoreboard players set CurlyQuesadillas green 0
+execute if block 321 111 707 green_wool run scoreboard players set CurlyQuesadillas green 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas green
+scoreboard players set CurlyQuesadillas yellow 0
+execute if block 322 111 707 yellow_wool run scoreboard players set CurlyQuesadillas yellow 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas yellow
+scoreboard players set CurlyQuesadillas orange 0
+execute if block 323 111 707 orange_wool run scoreboard players set CurlyQuesadillas orange 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas orange
+scoreboard players set CurlyQuesadillas red 0
+execute if block 324 111 707 red_wool run scoreboard players set CurlyQuesadillas red 1
+scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas red
+tellraw @p [{"text":"CurlyQuesadillas: "},{"score":{"name":"CurlyQuesadillas","objective":"scores"}}]scoreboard players set Deter_Mined scores 0
 scoreboard players set Deter_Mined brown 0
 execute if block 441 111 67 brown_wool run scoreboard players set Deter_Mined brown 1
 scoreboard players operation Deter_Mined scores += Deter_Mined brown
