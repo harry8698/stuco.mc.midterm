@@ -92,7 +92,8 @@ class Rooms:
                 f.write(timerString.format(interval * i + delay))
                 f.write('scoreboard players operation {} scores += {} {}\n'.format(name, name, color))
             f.write(timerString.format(interval * i + delay))
-            f.write('tellraw @p[scores={{timer=0..}}] [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]\n'.format(name, name))
+            f.write('tellraw @p[scores={{timer=0..}}] [{{"text":"{}: ", "color":"aqua", "clickEvent":{{"action":"run_command","value":"/tp @p[scores={{timer=0..}}] {} {} {}"}}}},{{"score":{{"name":"{}","objective":"scores"}}, "color":"white"}}]\n'
+                    .format(name, player.getX(), player.getY(), player.getZ(), name))
             i+=1
         f.write(timerString.format(interval * i))
         f.write('setblock ~ ~ ~ air\n')
