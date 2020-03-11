@@ -73,7 +73,7 @@ class Rooms:
                 f.write('execute if block {} {} {} {}_wool run scoreboard players set {} {} 1\n'.format(x + constants.COLORS.index(color), 
                                                                                                         y, z, color, name, color))
                 f.write('scoreboard players operation {} scores += {} {}\n'.format(name, name, color))
-            f.write('tellraw @p [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]'.format(name, name))
+            f.write('tellraw @p [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]\n'.format(name, name))
         f.close()
 
     def get(self, name):
