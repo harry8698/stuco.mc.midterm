@@ -10,13 +10,13 @@ tp @p[distance=..1,name=russellwalker21] 191 110 187
 tp @p[distance=..1,name=Tianfei] 191 110 315
 tp @p[distance=..1,name=Armitheo] 191 110 443
 tp @p[distance=..1,name=DouyuTV20120701] 191 110 571
-tp @p[distance=..1,name=xxx] 191 110 699
-tp @p[distance=..1,name=RX78v] 319 110 59
+tp @p[distance=..1,name=pattysan] 191 110 699
+tp @p[distance=..1,name=xxx] 319 110 59
 tp @p[distance=..1,name=Omegatron] 319 110 187
 tp @p[distance=..1,name=The1stDarkTower] 319 110 315
 tp @p[distance=..1,name=Flightraid] 319 110 443
 tp @p[distance=..1,name=Youcef_Tlm] 319 110 571
-tp @p[distance=..1,name=xxx] 319 110 699
+tp @p[distance=..1,name=CurlyQuesadillas] 319 110 699
 tp @p[distance=..1,name=Deter_Mined] 447 110 59
 tp @p[distance=..1,name=flamegator] 447 110 187
 tp @p[distance=..1,name=LaKoixFish] 447 110 315
