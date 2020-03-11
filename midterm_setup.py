@@ -69,8 +69,8 @@ class Rooms:
         f.close()
 
         timerString = 'execute if score @p[scores={{timer=0..}}] timer matches {} run '
-        interval = 10
-        delay = 5
+        interval = 4
+        delay = 2
         f = open('./midterm_calcscore_setup.mcfunction', 'w+') 
         f.write('scoreboard players add @p[scores={timer=0..}] timer 1\n')
         i = 1
