@@ -53,6 +53,28 @@ class Rooms:
             i = i + 1 if j + 1 == self.col else i
             j = (j + 1) % self.col
         f.close()
+        self.calcScore()
+
+    def calcScore(self):
+        f = open('./midterm_calcscore.mcfunction', 'w+')
+        f.write('scoreboard objectives remove scores \nscoreboard objectives add scores\n')
+
+        for color in constants.COLORS:
+            f.write('scoreboard objectives remove {} \nscoreboard objectives add {}\n'.format(color, color))
+        
+        for name in self.players:
+            player = self.players[name]
+            f.write('scoreboard players set {} scores 0\n'.format(name))
+            for color in constants.COLORS:
+                x = player.getX() - 6
+                y = player.getY() + 1
+                z = player.getZ() + 8
+                f.write('scoreboard players set {} {} 0\n'.format(name, color))
+                f.write('execute if block {} {} {} {}_wool run scoreboard players set {} {} 1\n'.format(x + constants.COLORS.index(color), 
+                                                                                                        y, z, color, name, color))
+                f.write('scoreboard players operation {} scores += {} {}\n'.format(name, name, color))
+            f.write('tellraw @p [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]'.format(name, name))
+        f.close()
 
     def get(self, name):
         if (name in self.players):
