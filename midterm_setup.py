@@ -57,24 +57,51 @@ class Rooms:
 
     def calcScore(self):
         f = open('./midterm_calcscore.mcfunction', 'w+')
+        f.write('forceload add ~ ~\n')
+        f.write('scoreboard objectives remove timer\n')
+        f.write('scoreboard objectives add timer dummy\n')
+        f.write('scoreboard players set @p timer 0\n')
+        f.write('gamemode spectator @p[scores={timer=0..}]\n')
         f.write('scoreboard objectives remove scores \nscoreboard objectives add scores dummy\n')
-
         for color in constants.COLORS:
             f.write('scoreboard objectives remove {} \nscoreboard objectives add {} dummy\n'.format(color, color))
-        
-        for name in self.players:
+        f.write('setblock ~ ~ ~ minecraft:repeating_command_block[conditional=false]{Command:"function midterm:midterm_calcscore_setup",auto:1b} replace\n')
+        f.close()
+
+        timerString = 'execute if score @p[scores={{timer=0..}}] timer matches {} run '
+        interval = 10
+        delay = 5
+        f = open('./midterm_calcscore_setup.mcfunction', 'w+') 
+        f.write('scoreboard players add @p[scores={timer=0..}] timer 1\n')
+        i = 1
+        for name in self.players.keys():
             player = self.players[name]
+            f.write(timerString.format(interval * i))
             f.write('scoreboard players set {} scores 0\n'.format(name))
+            f.write(timerString.format(interval * i))
             f.write('tp @p {} {} {}\n'.format(player.getX(), player.getY(), player.getZ()))
             for color in constants.COLORS:
                 x = player.getX() - 6
                 y = player.getY() + 1
                 z = player.getZ() + 8
+                f.write(timerString.format(interval * i + delay))
                 f.write('scoreboard players set {} {} 0\n'.format(name, color))
+                f.write(timerString.format(interval * i + delay))
                 f.write('execute if block {} {} {} {}_wool run scoreboard players set {} {} 1\n'.format(x + constants.COLORS.index(color), 
                                                                                                         y, z, color, name, color))
+                f.write(timerString.format(interval * i + delay))
                 f.write('scoreboard players operation {} scores += {} {}\n'.format(name, name, color))
-            f.write('tellraw @p [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]\n'.format(name, name))
+            f.write(timerString.format(interval * i + delay))
+            f.write('tellraw @p[scores={{timer=0..}}] [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]\n'.format(name, name))
+            i+=1
+        f.write(timerString.format(interval * i))
+        f.write('setblock ~ ~ ~ air\n')
+        f.write(timerString.format(interval * i))
+        f.write('tp @p[scores={timer=0..}] ~ ~ ~\n')
+        f.write(timerString.format(interval * i))
+        f.write('scoreboard objectives remove timer\n')
+        f.write(timerString.format(interval * i))
+        f.write('forceload remove ~ ~\n')
         f.close()
 
     def get(self, name):
