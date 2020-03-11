@@ -25,7 +25,7 @@ scoreboard objectives add orange dummy
 scoreboard objectives remove red 
 scoreboard objectives add red dummy
 scoreboard players set appleseedorchard scores 0
-forceload add 63 59
+tp @p 63 110 59
 scoreboard players set appleseedorchard brown 0
 execute if block 57 111 67 brown_wool run scoreboard players set appleseedorchard brown 1
 scoreboard players operation appleseedorchard scores += appleseedorchard brown
@@ -63,9 +63,8 @@ scoreboard players set appleseedorchard red 0
 execute if block 68 111 67 red_wool run scoreboard players set appleseedorchard red 1
 scoreboard players operation appleseedorchard scores += appleseedorchard red
 tellraw @p [{"text":"appleseedorchard: "},{"score":{"name":"appleseedorchard","objective":"scores"}}]
-forceload remove 63 59
 scoreboard players set WettestFrog scores 0
-forceload add 63 187
+tp @p 63 110 187
 scoreboard players set WettestFrog brown 0
 execute if block 57 111 195 brown_wool run scoreboard players set WettestFrog brown 1
 scoreboard players operation WettestFrog scores += WettestFrog brown
@@ -103,9 +102,8 @@ scoreboard players set WettestFrog red 0
 execute if block 68 111 195 red_wool run scoreboard players set WettestFrog red 1
 scoreboard players operation WettestFrog scores += WettestFrog red
 tellraw @p [{"text":"WettestFrog: "},{"score":{"name":"WettestFrog","objective":"scores"}}]
-forceload remove 63 187
 scoreboard players set izofar scores 0
-forceload add 63 315
+tp @p 63 110 315
 scoreboard players set izofar brown 0
 execute if block 57 111 323 brown_wool run scoreboard players set izofar brown 1
 scoreboard players operation izofar scores += izofar brown
@@ -143,9 +141,8 @@ scoreboard players set izofar red 0
 execute if block 68 111 323 red_wool run scoreboard players set izofar red 1
 scoreboard players operation izofar scores += izofar red
 tellraw @p [{"text":"izofar: "},{"score":{"name":"izofar","objective":"scores"}}]
-forceload remove 63 315
 scoreboard players set rx78v scores 0
-forceload add 63 443
+tp @p 63 110 443
 scoreboard players set rx78v brown 0
 execute if block 57 111 451 brown_wool run scoreboard players set rx78v brown 1
 scoreboard players operation rx78v scores += rx78v brown
@@ -183,9 +180,8 @@ scoreboard players set rx78v red 0
 execute if block 68 111 451 red_wool run scoreboard players set rx78v red 1
 scoreboard players operation rx78v scores += rx78v red
 tellraw @p [{"text":"rx78v: "},{"score":{"name":"rx78v","objective":"scores"}}]
-forceload remove 63 443
 scoreboard players set DripOrDrown99 scores 0
-forceload add 63 571
+tp @p 63 110 571
 scoreboard players set DripOrDrown99 brown 0
 execute if block 57 111 579 brown_wool run scoreboard players set DripOrDrown99 brown 1
 scoreboard players operation DripOrDrown99 scores += DripOrDrown99 brown
@@ -223,9 +219,8 @@ scoreboard players set DripOrDrown99 red 0
 execute if block 68 111 579 red_wool run scoreboard players set DripOrDrown99 red 1
 scoreboard players operation DripOrDrown99 scores += DripOrDrown99 red
 tellraw @p [{"text":"DripOrDrown99: "},{"score":{"name":"DripOrDrown99","objective":"scores"}}]
-forceload remove 63 571
 scoreboard players set blocboyJB_06 scores 0
-forceload add 63 699
+tp @p 63 110 699
 scoreboard players set blocboyJB_06 brown 0
 execute if block 57 111 707 brown_wool run scoreboard players set blocboyJB_06 brown 1
 scoreboard players operation blocboyJB_06 scores += blocboyJB_06 brown
@@ -263,9 +258,8 @@ scoreboard players set blocboyJB_06 red 0
 execute if block 68 111 707 red_wool run scoreboard players set blocboyJB_06 red 1
 scoreboard players operation blocboyJB_06 scores += blocboyJB_06 red
 tellraw @p [{"text":"blocboyJB_06: "},{"score":{"name":"blocboyJB_06","objective":"scores"}}]
-forceload remove 63 699
 scoreboard players set papaseb scores 0
-forceload add 191 59
+tp @p 191 110 59
 scoreboard players set papaseb brown 0
 execute if block 185 111 67 brown_wool run scoreboard players set papaseb brown 1
 scoreboard players operation papaseb scores += papaseb brown
@@ -303,9 +297,8 @@ scoreboard players set papaseb red 0
 execute if block 196 111 67 red_wool run scoreboard players set papaseb red 1
 scoreboard players operation papaseb scores += papaseb red
 tellraw @p [{"text":"papaseb: "},{"score":{"name":"papaseb","objective":"scores"}}]
-forceload remove 191 59
 scoreboard players set russellwalker21 scores 0
-forceload add 191 187
+tp @p 191 110 187
 scoreboard players set russellwalker21 brown 0
 execute if block 185 111 195 brown_wool run scoreboard players set russellwalker21 brown 1
 scoreboard players operation russellwalker21 scores += russellwalker21 brown
@@ -343,9 +336,8 @@ scoreboard players set russellwalker21 red 0
 execute if block 196 111 195 red_wool run scoreboard players set russellwalker21 red 1
 scoreboard players operation russellwalker21 scores += russellwalker21 red
 tellraw @p [{"text":"russellwalker21: "},{"score":{"name":"russellwalker21","objective":"scores"}}]
-forceload remove 191 187
 scoreboard players set Tianfei scores 0
-forceload add 191 315
+tp @p 191 110 315
 scoreboard players set Tianfei brown 0
 execute if block 185 111 323 brown_wool run scoreboard players set Tianfei brown 1
 scoreboard players operation Tianfei scores += Tianfei brown
@@ -383,9 +375,8 @@ scoreboard players set Tianfei red 0
 execute if block 196 111 323 red_wool run scoreboard players set Tianfei red 1
 scoreboard players operation Tianfei scores += Tianfei red
 tellraw @p [{"text":"Tianfei: "},{"score":{"name":"Tianfei","objective":"scores"}}]
-forceload remove 191 315
 scoreboard players set Armitheo scores 0
-forceload add 191 443
+tp @p 191 110 443
 scoreboard players set Armitheo brown 0
 execute if block 185 111 451 brown_wool run scoreboard players set Armitheo brown 1
 scoreboard players operation Armitheo scores += Armitheo brown
@@ -423,9 +414,8 @@ scoreboard players set Armitheo red 0
 execute if block 196 111 451 red_wool run scoreboard players set Armitheo red 1
 scoreboard players operation Armitheo scores += Armitheo red
 tellraw @p [{"text":"Armitheo: "},{"score":{"name":"Armitheo","objective":"scores"}}]
-forceload remove 191 443
 scoreboard players set DouyuTV20120701 scores 0
-forceload add 191 571
+tp @p 191 110 571
 scoreboard players set DouyuTV20120701 brown 0
 execute if block 185 111 579 brown_wool run scoreboard players set DouyuTV20120701 brown 1
 scoreboard players operation DouyuTV20120701 scores += DouyuTV20120701 brown
@@ -463,9 +453,8 @@ scoreboard players set DouyuTV20120701 red 0
 execute if block 196 111 579 red_wool run scoreboard players set DouyuTV20120701 red 1
 scoreboard players operation DouyuTV20120701 scores += DouyuTV20120701 red
 tellraw @p [{"text":"DouyuTV20120701: "},{"score":{"name":"DouyuTV20120701","objective":"scores"}}]
-forceload remove 191 571
 scoreboard players set pattysan scores 0
-forceload add 191 699
+tp @p 191 110 699
 scoreboard players set pattysan brown 0
 execute if block 185 111 707 brown_wool run scoreboard players set pattysan brown 1
 scoreboard players operation pattysan scores += pattysan brown
@@ -503,9 +492,8 @@ scoreboard players set pattysan red 0
 execute if block 196 111 707 red_wool run scoreboard players set pattysan red 1
 scoreboard players operation pattysan scores += pattysan red
 tellraw @p [{"text":"pattysan: "},{"score":{"name":"pattysan","objective":"scores"}}]
-forceload remove 191 699
 scoreboard players set xxx scores 0
-forceload add 447 699
+tp @p 447 110 699
 scoreboard players set xxx brown 0
 execute if block 441 111 707 brown_wool run scoreboard players set xxx brown 1
 scoreboard players operation xxx scores += xxx brown
@@ -543,9 +531,8 @@ scoreboard players set xxx red 0
 execute if block 452 111 707 red_wool run scoreboard players set xxx red 1
 scoreboard players operation xxx scores += xxx red
 tellraw @p [{"text":"xxx: "},{"score":{"name":"xxx","objective":"scores"}}]
-forceload remove 447 699
 scoreboard players set Omegatron scores 0
-forceload add 319 187
+tp @p 319 110 187
 scoreboard players set Omegatron brown 0
 execute if block 313 111 195 brown_wool run scoreboard players set Omegatron brown 1
 scoreboard players operation Omegatron scores += Omegatron brown
@@ -583,9 +570,8 @@ scoreboard players set Omegatron red 0
 execute if block 324 111 195 red_wool run scoreboard players set Omegatron red 1
 scoreboard players operation Omegatron scores += Omegatron red
 tellraw @p [{"text":"Omegatron: "},{"score":{"name":"Omegatron","objective":"scores"}}]
-forceload remove 319 187
 scoreboard players set The1stDarkTower scores 0
-forceload add 319 315
+tp @p 319 110 315
 scoreboard players set The1stDarkTower brown 0
 execute if block 313 111 323 brown_wool run scoreboard players set The1stDarkTower brown 1
 scoreboard players operation The1stDarkTower scores += The1stDarkTower brown
@@ -623,9 +609,8 @@ scoreboard players set The1stDarkTower red 0
 execute if block 324 111 323 red_wool run scoreboard players set The1stDarkTower red 1
 scoreboard players operation The1stDarkTower scores += The1stDarkTower red
 tellraw @p [{"text":"The1stDarkTower: "},{"score":{"name":"The1stDarkTower","objective":"scores"}}]
-forceload remove 319 315
 scoreboard players set Flightraid scores 0
-forceload add 319 443
+tp @p 319 110 443
 scoreboard players set Flightraid brown 0
 execute if block 313 111 451 brown_wool run scoreboard players set Flightraid brown 1
 scoreboard players operation Flightraid scores += Flightraid brown
@@ -663,9 +648,8 @@ scoreboard players set Flightraid red 0
 execute if block 324 111 451 red_wool run scoreboard players set Flightraid red 1
 scoreboard players operation Flightraid scores += Flightraid red
 tellraw @p [{"text":"Flightraid: "},{"score":{"name":"Flightraid","objective":"scores"}}]
-forceload remove 319 443
 scoreboard players set Youcef_Tlm scores 0
-forceload add 319 571
+tp @p 319 110 571
 scoreboard players set Youcef_Tlm brown 0
 execute if block 313 111 579 brown_wool run scoreboard players set Youcef_Tlm brown 1
 scoreboard players operation Youcef_Tlm scores += Youcef_Tlm brown
@@ -703,9 +687,8 @@ scoreboard players set Youcef_Tlm red 0
 execute if block 324 111 579 red_wool run scoreboard players set Youcef_Tlm red 1
 scoreboard players operation Youcef_Tlm scores += Youcef_Tlm red
 tellraw @p [{"text":"Youcef_Tlm: "},{"score":{"name":"Youcef_Tlm","objective":"scores"}}]
-forceload remove 319 571
 scoreboard players set CurlyQuesadillas scores 0
-forceload add 319 699
+tp @p 319 110 699
 scoreboard players set CurlyQuesadillas brown 0
 execute if block 313 111 707 brown_wool run scoreboard players set CurlyQuesadillas brown 1
 scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas brown
@@ -743,9 +726,8 @@ scoreboard players set CurlyQuesadillas red 0
 execute if block 324 111 707 red_wool run scoreboard players set CurlyQuesadillas red 1
 scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas red
 tellraw @p [{"text":"CurlyQuesadillas: "},{"score":{"name":"CurlyQuesadillas","objective":"scores"}}]
-forceload remove 319 699
 scoreboard players set Deter_Mined scores 0
-forceload add 447 59
+tp @p 447 110 59
 scoreboard players set Deter_Mined brown 0
 execute if block 441 111 67 brown_wool run scoreboard players set Deter_Mined brown 1
 scoreboard players operation Deter_Mined scores += Deter_Mined brown
@@ -783,9 +765,8 @@ scoreboard players set Deter_Mined red 0
 execute if block 452 111 67 red_wool run scoreboard players set Deter_Mined red 1
 scoreboard players operation Deter_Mined scores += Deter_Mined red
 tellraw @p [{"text":"Deter_Mined: "},{"score":{"name":"Deter_Mined","objective":"scores"}}]
-forceload remove 447 59
 scoreboard players set flamegator scores 0
-forceload add 447 187
+tp @p 447 110 187
 scoreboard players set flamegator brown 0
 execute if block 441 111 195 brown_wool run scoreboard players set flamegator brown 1
 scoreboard players operation flamegator scores += flamegator brown
@@ -823,9 +804,8 @@ scoreboard players set flamegator red 0
 execute if block 452 111 195 red_wool run scoreboard players set flamegator red 1
 scoreboard players operation flamegator scores += flamegator red
 tellraw @p [{"text":"flamegator: "},{"score":{"name":"flamegator","objective":"scores"}}]
-forceload remove 447 187
 scoreboard players set LaKoixFish scores 0
-forceload add 447 315
+tp @p 447 110 315
 scoreboard players set LaKoixFish brown 0
 execute if block 441 111 323 brown_wool run scoreboard players set LaKoixFish brown 1
 scoreboard players operation LaKoixFish scores += LaKoixFish brown
@@ -863,9 +843,8 @@ scoreboard players set LaKoixFish red 0
 execute if block 452 111 323 red_wool run scoreboard players set LaKoixFish red 1
 scoreboard players operation LaKoixFish scores += LaKoixFish red
 tellraw @p [{"text":"LaKoixFish: "},{"score":{"name":"LaKoixFish","objective":"scores"}}]
-forceload remove 447 315
 scoreboard players set Dummyc0m scores 0
-forceload add 447 443
+tp @p 447 110 443
 scoreboard players set Dummyc0m brown 0
 execute if block 441 111 451 brown_wool run scoreboard players set Dummyc0m brown 1
 scoreboard players operation Dummyc0m scores += Dummyc0m brown
@@ -903,9 +882,8 @@ scoreboard players set Dummyc0m red 0
 execute if block 452 111 451 red_wool run scoreboard players set Dummyc0m red 1
 scoreboard players operation Dummyc0m scores += Dummyc0m red
 tellraw @p [{"text":"Dummyc0m: "},{"score":{"name":"Dummyc0m","objective":"scores"}}]
-forceload remove 447 443
 scoreboard players set rf174919 scores 0
-forceload add 447 571
+tp @p 447 110 571
 scoreboard players set rf174919 brown 0
 execute if block 441 111 579 brown_wool run scoreboard players set rf174919 brown 1
 scoreboard players operation rf174919 scores += rf174919 brown
@@ -943,9 +921,8 @@ scoreboard players set rf174919 red 0
 execute if block 452 111 579 red_wool run scoreboard players set rf174919 red 1
 scoreboard players operation rf174919 scores += rf174919 red
 tellraw @p [{"text":"rf174919: "},{"score":{"name":"rf174919","objective":"scores"}}]
-forceload remove 447 571
 scoreboard players set Trollium scores 0
-forceload add 575 59
+tp @p 575 110 59
 scoreboard players set Trollium brown 0
 execute if block 569 111 67 brown_wool run scoreboard players set Trollium brown 1
 scoreboard players operation Trollium scores += Trollium brown
@@ -983,9 +960,8 @@ scoreboard players set Trollium red 0
 execute if block 580 111 67 red_wool run scoreboard players set Trollium red 1
 scoreboard players operation Trollium scores += Trollium red
 tellraw @p [{"text":"Trollium: "},{"score":{"name":"Trollium","objective":"scores"}}]
-forceload remove 575 59
 scoreboard players set raphy2 scores 0
-forceload add 575 187
+tp @p 575 110 187
 scoreboard players set raphy2 brown 0
 execute if block 569 111 195 brown_wool run scoreboard players set raphy2 brown 1
 scoreboard players operation raphy2 scores += raphy2 brown
@@ -1023,9 +999,8 @@ scoreboard players set raphy2 red 0
 execute if block 580 111 195 red_wool run scoreboard players set raphy2 red 1
 scoreboard players operation raphy2 scores += raphy2 red
 tellraw @p [{"text":"raphy2: "},{"score":{"name":"raphy2","objective":"scores"}}]
-forceload remove 575 187
 scoreboard players set stmjk scores 0
-forceload add 575 315
+tp @p 575 110 315
 scoreboard players set stmjk brown 0
 execute if block 569 111 323 brown_wool run scoreboard players set stmjk brown 1
 scoreboard players operation stmjk scores += stmjk brown
@@ -1063,9 +1038,8 @@ scoreboard players set stmjk red 0
 execute if block 580 111 323 red_wool run scoreboard players set stmjk red 1
 scoreboard players operation stmjk scores += stmjk red
 tellraw @p [{"text":"stmjk: "},{"score":{"name":"stmjk","objective":"scores"}}]
-forceload remove 575 315
 scoreboard players set Cloudberryz scores 0
-forceload add 575 443
+tp @p 575 110 443
 scoreboard players set Cloudberryz brown 0
 execute if block 569 111 451 brown_wool run scoreboard players set Cloudberryz brown 1
 scoreboard players operation Cloudberryz scores += Cloudberryz brown
@@ -1103,9 +1077,8 @@ scoreboard players set Cloudberryz red 0
 execute if block 580 111 451 red_wool run scoreboard players set Cloudberryz red 1
 scoreboard players operation Cloudberryz scores += Cloudberryz red
 tellraw @p [{"text":"Cloudberryz: "},{"score":{"name":"Cloudberryz","objective":"scores"}}]
-forceload remove 575 443
 scoreboard players set fredjoon scores 0
-forceload add 575 571
+tp @p 575 110 571
 scoreboard players set fredjoon brown 0
 execute if block 569 111 579 brown_wool run scoreboard players set fredjoon brown 1
 scoreboard players operation fredjoon scores += fredjoon brown
@@ -1143,4 +1116,3 @@ scoreboard players set fredjoon red 0
 execute if block 580 111 579 red_wool run scoreboard players set fredjoon red 1
 scoreboard players operation fredjoon scores += fredjoon red
 tellraw @p [{"text":"fredjoon: "},{"score":{"name":"fredjoon","objective":"scores"}}]
-forceload remove 575 571
