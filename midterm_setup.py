@@ -65,6 +65,7 @@ class Rooms:
         for name in self.players:
             player = self.players[name]
             f.write('scoreboard players set {} scores 0\n'.format(name))
+            f.write('forceload add {} {}\n'.format(player.getX(), player.getZ()))
             for color in constants.COLORS:
                 x = player.getX() - 6
                 y = player.getY() + 1
@@ -74,6 +75,7 @@ class Rooms:
                                                                                                         y, z, color, name, color))
                 f.write('scoreboard players operation {} scores += {} {}\n'.format(name, name, color))
             f.write('tellraw @p [{{"text":"{}: "}},{{"score":{{"name":"{}","objective":"scores"}}}}]\n'.format(name, name))
+            f.write('forceload remove {} {}\n'.format(player.getX(), player.getZ()))
         f.close()
 
     def get(self, name):
