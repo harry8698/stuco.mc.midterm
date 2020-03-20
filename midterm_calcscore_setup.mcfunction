@@ -1,6 +1,6 @@
 scoreboard players add @p[scores={timer=0..}] timer 1
 execute if score @p[scores={timer=0..}] timer matches 8 run scoreboard players set appleseedorchard scores 0
-execute if score @p[scores={timer=0..}] timer matches 8 run tp @p 63 110 59
+execute if score @p[scores={timer=0..}] timer matches 8 run tp @p[scores={timer=0..}] 63 110 59
 execute if score @p[scores={timer=0..}] timer matches 12 run scoreboard players set appleseedorchard brown 0
 execute if score @p[scores={timer=0..}] timer matches 12 run execute if block 57 111 67 brown_wool run scoreboard players set appleseedorchard brown 1
 execute if score @p[scores={timer=0..}] timer matches 12 run scoreboard players operation appleseedorchard scores += appleseedorchard brown
@@ -40,7 +40,7 @@ execute if score @p[scores={timer=0..}] timer matches 12 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 12 run execute if score appleseedorchard scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"appleseedorchard: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 59"}},{"score":{"name":"appleseedorchard","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 12 run execute if score appleseedorchard scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"appleseedorchard: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 59"}},{"score":{"name":"appleseedorchard","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 16 run scoreboard players set WettestFrog scores 0
-execute if score @p[scores={timer=0..}] timer matches 16 run tp @p 63 110 187
+execute if score @p[scores={timer=0..}] timer matches 16 run tp @p[scores={timer=0..}] 63 110 187
 execute if score @p[scores={timer=0..}] timer matches 20 run scoreboard players set WettestFrog brown 0
 execute if score @p[scores={timer=0..}] timer matches 20 run execute if block 57 111 195 brown_wool run scoreboard players set WettestFrog brown 1
 execute if score @p[scores={timer=0..}] timer matches 20 run scoreboard players operation WettestFrog scores += WettestFrog brown
@@ -80,7 +80,7 @@ execute if score @p[scores={timer=0..}] timer matches 20 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 20 run execute if score WettestFrog scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"WettestFrog: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 187"}},{"score":{"name":"WettestFrog","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 20 run execute if score WettestFrog scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"WettestFrog: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 187"}},{"score":{"name":"WettestFrog","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 24 run scoreboard players set izofar scores 0
-execute if score @p[scores={timer=0..}] timer matches 24 run tp @p 63 110 315
+execute if score @p[scores={timer=0..}] timer matches 24 run tp @p[scores={timer=0..}] 63 110 315
 execute if score @p[scores={timer=0..}] timer matches 28 run scoreboard players set izofar brown 0
 execute if score @p[scores={timer=0..}] timer matches 28 run execute if block 57 111 323 brown_wool run scoreboard players set izofar brown 1
 execute if score @p[scores={timer=0..}] timer matches 28 run scoreboard players operation izofar scores += izofar brown
@@ -120,7 +120,7 @@ execute if score @p[scores={timer=0..}] timer matches 28 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 28 run execute if score izofar scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"izofar: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 315"}},{"score":{"name":"izofar","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 28 run execute if score izofar scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"izofar: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 315"}},{"score":{"name":"izofar","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 32 run scoreboard players set rx78v scores 0
-execute if score @p[scores={timer=0..}] timer matches 32 run tp @p 63 110 443
+execute if score @p[scores={timer=0..}] timer matches 32 run tp @p[scores={timer=0..}] 63 110 443
 execute if score @p[scores={timer=0..}] timer matches 36 run scoreboard players set rx78v brown 0
 execute if score @p[scores={timer=0..}] timer matches 36 run execute if block 57 111 451 brown_wool run scoreboard players set rx78v brown 1
 execute if score @p[scores={timer=0..}] timer matches 36 run scoreboard players operation rx78v scores += rx78v brown
@@ -160,7 +160,7 @@ execute if score @p[scores={timer=0..}] timer matches 36 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 36 run execute if score rx78v scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"rx78v: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 443"}},{"score":{"name":"rx78v","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 36 run execute if score rx78v scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"rx78v: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 443"}},{"score":{"name":"rx78v","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 40 run scoreboard players set DripOrDrown99 scores 0
-execute if score @p[scores={timer=0..}] timer matches 40 run tp @p 63 110 571
+execute if score @p[scores={timer=0..}] timer matches 40 run tp @p[scores={timer=0..}] 63 110 571
 execute if score @p[scores={timer=0..}] timer matches 44 run scoreboard players set DripOrDrown99 brown 0
 execute if score @p[scores={timer=0..}] timer matches 44 run execute if block 57 111 579 brown_wool run scoreboard players set DripOrDrown99 brown 1
 execute if score @p[scores={timer=0..}] timer matches 44 run scoreboard players operation DripOrDrown99 scores += DripOrDrown99 brown
@@ -200,7 +200,7 @@ execute if score @p[scores={timer=0..}] timer matches 44 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 44 run execute if score DripOrDrown99 scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"DripOrDrown99: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 571"}},{"score":{"name":"DripOrDrown99","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 44 run execute if score DripOrDrown99 scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"DripOrDrown99: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 571"}},{"score":{"name":"DripOrDrown99","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 48 run scoreboard players set blocboyJB_06 scores 0
-execute if score @p[scores={timer=0..}] timer matches 48 run tp @p 63 110 699
+execute if score @p[scores={timer=0..}] timer matches 48 run tp @p[scores={timer=0..}] 63 110 699
 execute if score @p[scores={timer=0..}] timer matches 52 run scoreboard players set blocboyJB_06 brown 0
 execute if score @p[scores={timer=0..}] timer matches 52 run execute if block 57 111 707 brown_wool run scoreboard players set blocboyJB_06 brown 1
 execute if score @p[scores={timer=0..}] timer matches 52 run scoreboard players operation blocboyJB_06 scores += blocboyJB_06 brown
@@ -240,7 +240,7 @@ execute if score @p[scores={timer=0..}] timer matches 52 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 52 run execute if score blocboyJB_06 scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"blocboyJB_06: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 699"}},{"score":{"name":"blocboyJB_06","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 52 run execute if score blocboyJB_06 scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"blocboyJB_06: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 63 110 699"}},{"score":{"name":"blocboyJB_06","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 56 run scoreboard players set papaseb scores 0
-execute if score @p[scores={timer=0..}] timer matches 56 run tp @p 191 110 59
+execute if score @p[scores={timer=0..}] timer matches 56 run tp @p[scores={timer=0..}] 191 110 59
 execute if score @p[scores={timer=0..}] timer matches 60 run scoreboard players set papaseb brown 0
 execute if score @p[scores={timer=0..}] timer matches 60 run execute if block 185 111 67 brown_wool run scoreboard players set papaseb brown 1
 execute if score @p[scores={timer=0..}] timer matches 60 run scoreboard players operation papaseb scores += papaseb brown
@@ -280,7 +280,7 @@ execute if score @p[scores={timer=0..}] timer matches 60 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 60 run execute if score papaseb scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"papaseb: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 59"}},{"score":{"name":"papaseb","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 60 run execute if score papaseb scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"papaseb: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 59"}},{"score":{"name":"papaseb","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 64 run scoreboard players set russellwalker21 scores 0
-execute if score @p[scores={timer=0..}] timer matches 64 run tp @p 191 110 187
+execute if score @p[scores={timer=0..}] timer matches 64 run tp @p[scores={timer=0..}] 191 110 187
 execute if score @p[scores={timer=0..}] timer matches 68 run scoreboard players set russellwalker21 brown 0
 execute if score @p[scores={timer=0..}] timer matches 68 run execute if block 185 111 195 brown_wool run scoreboard players set russellwalker21 brown 1
 execute if score @p[scores={timer=0..}] timer matches 68 run scoreboard players operation russellwalker21 scores += russellwalker21 brown
@@ -320,7 +320,7 @@ execute if score @p[scores={timer=0..}] timer matches 68 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 68 run execute if score russellwalker21 scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"russellwalker21: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 187"}},{"score":{"name":"russellwalker21","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 68 run execute if score russellwalker21 scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"russellwalker21: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 187"}},{"score":{"name":"russellwalker21","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 72 run scoreboard players set Tianfei scores 0
-execute if score @p[scores={timer=0..}] timer matches 72 run tp @p 191 110 315
+execute if score @p[scores={timer=0..}] timer matches 72 run tp @p[scores={timer=0..}] 191 110 315
 execute if score @p[scores={timer=0..}] timer matches 76 run scoreboard players set Tianfei brown 0
 execute if score @p[scores={timer=0..}] timer matches 76 run execute if block 185 111 323 brown_wool run scoreboard players set Tianfei brown 1
 execute if score @p[scores={timer=0..}] timer matches 76 run scoreboard players operation Tianfei scores += Tianfei brown
@@ -360,7 +360,7 @@ execute if score @p[scores={timer=0..}] timer matches 76 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 76 run execute if score Tianfei scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Tianfei: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 315"}},{"score":{"name":"Tianfei","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 76 run execute if score Tianfei scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Tianfei: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 315"}},{"score":{"name":"Tianfei","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 80 run scoreboard players set Armitheo scores 0
-execute if score @p[scores={timer=0..}] timer matches 80 run tp @p 191 110 443
+execute if score @p[scores={timer=0..}] timer matches 80 run tp @p[scores={timer=0..}] 191 110 443
 execute if score @p[scores={timer=0..}] timer matches 84 run scoreboard players set Armitheo brown 0
 execute if score @p[scores={timer=0..}] timer matches 84 run execute if block 185 111 451 brown_wool run scoreboard players set Armitheo brown 1
 execute if score @p[scores={timer=0..}] timer matches 84 run scoreboard players operation Armitheo scores += Armitheo brown
@@ -400,7 +400,7 @@ execute if score @p[scores={timer=0..}] timer matches 84 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 84 run execute if score Armitheo scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Armitheo: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 443"}},{"score":{"name":"Armitheo","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 84 run execute if score Armitheo scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Armitheo: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 443"}},{"score":{"name":"Armitheo","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 88 run scoreboard players set DouyuTV20120701 scores 0
-execute if score @p[scores={timer=0..}] timer matches 88 run tp @p 191 110 571
+execute if score @p[scores={timer=0..}] timer matches 88 run tp @p[scores={timer=0..}] 191 110 571
 execute if score @p[scores={timer=0..}] timer matches 92 run scoreboard players set DouyuTV20120701 brown 0
 execute if score @p[scores={timer=0..}] timer matches 92 run execute if block 185 111 579 brown_wool run scoreboard players set DouyuTV20120701 brown 1
 execute if score @p[scores={timer=0..}] timer matches 92 run scoreboard players operation DouyuTV20120701 scores += DouyuTV20120701 brown
@@ -440,7 +440,7 @@ execute if score @p[scores={timer=0..}] timer matches 92 run scoreboard players 
 execute if score @p[scores={timer=0..}] timer matches 92 run execute if score DouyuTV20120701 scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"DouyuTV20120701: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 571"}},{"score":{"name":"DouyuTV20120701","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 92 run execute if score DouyuTV20120701 scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"DouyuTV20120701: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 571"}},{"score":{"name":"DouyuTV20120701","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 96 run scoreboard players set pattysan scores 0
-execute if score @p[scores={timer=0..}] timer matches 96 run tp @p 191 110 699
+execute if score @p[scores={timer=0..}] timer matches 96 run tp @p[scores={timer=0..}] 191 110 699
 execute if score @p[scores={timer=0..}] timer matches 100 run scoreboard players set pattysan brown 0
 execute if score @p[scores={timer=0..}] timer matches 100 run execute if block 185 111 707 brown_wool run scoreboard players set pattysan brown 1
 execute if score @p[scores={timer=0..}] timer matches 100 run scoreboard players operation pattysan scores += pattysan brown
@@ -480,7 +480,7 @@ execute if score @p[scores={timer=0..}] timer matches 100 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 100 run execute if score pattysan scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"pattysan: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 699"}},{"score":{"name":"pattysan","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 100 run execute if score pattysan scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"pattysan: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 191 110 699"}},{"score":{"name":"pattysan","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 104 run scoreboard players set xxx scores 0
-execute if score @p[scores={timer=0..}] timer matches 104 run tp @p 447 110 699
+execute if score @p[scores={timer=0..}] timer matches 104 run tp @p[scores={timer=0..}] 447 110 699
 execute if score @p[scores={timer=0..}] timer matches 108 run scoreboard players set xxx brown 0
 execute if score @p[scores={timer=0..}] timer matches 108 run execute if block 441 111 707 brown_wool run scoreboard players set xxx brown 1
 execute if score @p[scores={timer=0..}] timer matches 108 run scoreboard players operation xxx scores += xxx brown
@@ -520,7 +520,7 @@ execute if score @p[scores={timer=0..}] timer matches 108 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 108 run execute if score xxx scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"xxx: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 699"}},{"score":{"name":"xxx","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 108 run execute if score xxx scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"xxx: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 699"}},{"score":{"name":"xxx","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 112 run scoreboard players set Omegatron scores 0
-execute if score @p[scores={timer=0..}] timer matches 112 run tp @p 319 110 187
+execute if score @p[scores={timer=0..}] timer matches 112 run tp @p[scores={timer=0..}] 319 110 187
 execute if score @p[scores={timer=0..}] timer matches 116 run scoreboard players set Omegatron brown 0
 execute if score @p[scores={timer=0..}] timer matches 116 run execute if block 313 111 195 brown_wool run scoreboard players set Omegatron brown 1
 execute if score @p[scores={timer=0..}] timer matches 116 run scoreboard players operation Omegatron scores += Omegatron brown
@@ -560,7 +560,7 @@ execute if score @p[scores={timer=0..}] timer matches 116 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 116 run execute if score Omegatron scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Omegatron: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 187"}},{"score":{"name":"Omegatron","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 116 run execute if score Omegatron scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Omegatron: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 187"}},{"score":{"name":"Omegatron","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 120 run scoreboard players set The1stDarkTower scores 0
-execute if score @p[scores={timer=0..}] timer matches 120 run tp @p 319 110 315
+execute if score @p[scores={timer=0..}] timer matches 120 run tp @p[scores={timer=0..}] 319 110 315
 execute if score @p[scores={timer=0..}] timer matches 124 run scoreboard players set The1stDarkTower brown 0
 execute if score @p[scores={timer=0..}] timer matches 124 run execute if block 313 111 323 brown_wool run scoreboard players set The1stDarkTower brown 1
 execute if score @p[scores={timer=0..}] timer matches 124 run scoreboard players operation The1stDarkTower scores += The1stDarkTower brown
@@ -600,7 +600,7 @@ execute if score @p[scores={timer=0..}] timer matches 124 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 124 run execute if score The1stDarkTower scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"The1stDarkTower: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 315"}},{"score":{"name":"The1stDarkTower","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 124 run execute if score The1stDarkTower scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"The1stDarkTower: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 315"}},{"score":{"name":"The1stDarkTower","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 128 run scoreboard players set Flightraid scores 0
-execute if score @p[scores={timer=0..}] timer matches 128 run tp @p 319 110 443
+execute if score @p[scores={timer=0..}] timer matches 128 run tp @p[scores={timer=0..}] 319 110 443
 execute if score @p[scores={timer=0..}] timer matches 132 run scoreboard players set Flightraid brown 0
 execute if score @p[scores={timer=0..}] timer matches 132 run execute if block 313 111 451 brown_wool run scoreboard players set Flightraid brown 1
 execute if score @p[scores={timer=0..}] timer matches 132 run scoreboard players operation Flightraid scores += Flightraid brown
@@ -640,7 +640,7 @@ execute if score @p[scores={timer=0..}] timer matches 132 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 132 run execute if score Flightraid scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Flightraid: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 443"}},{"score":{"name":"Flightraid","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 132 run execute if score Flightraid scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Flightraid: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 443"}},{"score":{"name":"Flightraid","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 136 run scoreboard players set Youcef_Tlm scores 0
-execute if score @p[scores={timer=0..}] timer matches 136 run tp @p 319 110 571
+execute if score @p[scores={timer=0..}] timer matches 136 run tp @p[scores={timer=0..}] 319 110 571
 execute if score @p[scores={timer=0..}] timer matches 140 run scoreboard players set Youcef_Tlm brown 0
 execute if score @p[scores={timer=0..}] timer matches 140 run execute if block 313 111 579 brown_wool run scoreboard players set Youcef_Tlm brown 1
 execute if score @p[scores={timer=0..}] timer matches 140 run scoreboard players operation Youcef_Tlm scores += Youcef_Tlm brown
@@ -680,7 +680,7 @@ execute if score @p[scores={timer=0..}] timer matches 140 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 140 run execute if score Youcef_Tlm scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Youcef_Tlm: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 571"}},{"score":{"name":"Youcef_Tlm","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 140 run execute if score Youcef_Tlm scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Youcef_Tlm: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 571"}},{"score":{"name":"Youcef_Tlm","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 144 run scoreboard players set CurlyQuesadillas scores 0
-execute if score @p[scores={timer=0..}] timer matches 144 run tp @p 319 110 699
+execute if score @p[scores={timer=0..}] timer matches 144 run tp @p[scores={timer=0..}] 319 110 699
 execute if score @p[scores={timer=0..}] timer matches 148 run scoreboard players set CurlyQuesadillas brown 0
 execute if score @p[scores={timer=0..}] timer matches 148 run execute if block 313 111 707 brown_wool run scoreboard players set CurlyQuesadillas brown 1
 execute if score @p[scores={timer=0..}] timer matches 148 run scoreboard players operation CurlyQuesadillas scores += CurlyQuesadillas brown
@@ -720,7 +720,7 @@ execute if score @p[scores={timer=0..}] timer matches 148 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 148 run execute if score CurlyQuesadillas scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"CurlyQuesadillas: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 699"}},{"score":{"name":"CurlyQuesadillas","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 148 run execute if score CurlyQuesadillas scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"CurlyQuesadillas: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 319 110 699"}},{"score":{"name":"CurlyQuesadillas","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 152 run scoreboard players set Deter_Mined scores 0
-execute if score @p[scores={timer=0..}] timer matches 152 run tp @p 447 110 59
+execute if score @p[scores={timer=0..}] timer matches 152 run tp @p[scores={timer=0..}] 447 110 59
 execute if score @p[scores={timer=0..}] timer matches 156 run scoreboard players set Deter_Mined brown 0
 execute if score @p[scores={timer=0..}] timer matches 156 run execute if block 441 111 67 brown_wool run scoreboard players set Deter_Mined brown 1
 execute if score @p[scores={timer=0..}] timer matches 156 run scoreboard players operation Deter_Mined scores += Deter_Mined brown
@@ -760,7 +760,7 @@ execute if score @p[scores={timer=0..}] timer matches 156 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 156 run execute if score Deter_Mined scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Deter_Mined: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 59"}},{"score":{"name":"Deter_Mined","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 156 run execute if score Deter_Mined scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Deter_Mined: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 59"}},{"score":{"name":"Deter_Mined","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 160 run scoreboard players set flamegator scores 0
-execute if score @p[scores={timer=0..}] timer matches 160 run tp @p 447 110 187
+execute if score @p[scores={timer=0..}] timer matches 160 run tp @p[scores={timer=0..}] 447 110 187
 execute if score @p[scores={timer=0..}] timer matches 164 run scoreboard players set flamegator brown 0
 execute if score @p[scores={timer=0..}] timer matches 164 run execute if block 441 111 195 brown_wool run scoreboard players set flamegator brown 1
 execute if score @p[scores={timer=0..}] timer matches 164 run scoreboard players operation flamegator scores += flamegator brown
@@ -800,7 +800,7 @@ execute if score @p[scores={timer=0..}] timer matches 164 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 164 run execute if score flamegator scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"flamegator: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 187"}},{"score":{"name":"flamegator","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 164 run execute if score flamegator scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"flamegator: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 187"}},{"score":{"name":"flamegator","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 168 run scoreboard players set LaKoixFish scores 0
-execute if score @p[scores={timer=0..}] timer matches 168 run tp @p 447 110 315
+execute if score @p[scores={timer=0..}] timer matches 168 run tp @p[scores={timer=0..}] 447 110 315
 execute if score @p[scores={timer=0..}] timer matches 172 run scoreboard players set LaKoixFish brown 0
 execute if score @p[scores={timer=0..}] timer matches 172 run execute if block 441 111 323 brown_wool run scoreboard players set LaKoixFish brown 1
 execute if score @p[scores={timer=0..}] timer matches 172 run scoreboard players operation LaKoixFish scores += LaKoixFish brown
@@ -840,7 +840,7 @@ execute if score @p[scores={timer=0..}] timer matches 172 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 172 run execute if score LaKoixFish scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"LaKoixFish: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 315"}},{"score":{"name":"LaKoixFish","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 172 run execute if score LaKoixFish scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"LaKoixFish: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 315"}},{"score":{"name":"LaKoixFish","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 176 run scoreboard players set Dummyc0m scores 0
-execute if score @p[scores={timer=0..}] timer matches 176 run tp @p 447 110 443
+execute if score @p[scores={timer=0..}] timer matches 176 run tp @p[scores={timer=0..}] 447 110 443
 execute if score @p[scores={timer=0..}] timer matches 180 run scoreboard players set Dummyc0m brown 0
 execute if score @p[scores={timer=0..}] timer matches 180 run execute if block 441 111 451 brown_wool run scoreboard players set Dummyc0m brown 1
 execute if score @p[scores={timer=0..}] timer matches 180 run scoreboard players operation Dummyc0m scores += Dummyc0m brown
@@ -880,7 +880,7 @@ execute if score @p[scores={timer=0..}] timer matches 180 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 180 run execute if score Dummyc0m scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Dummyc0m: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 443"}},{"score":{"name":"Dummyc0m","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 180 run execute if score Dummyc0m scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Dummyc0m: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 443"}},{"score":{"name":"Dummyc0m","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 184 run scoreboard players set rf174919 scores 0
-execute if score @p[scores={timer=0..}] timer matches 184 run tp @p 447 110 571
+execute if score @p[scores={timer=0..}] timer matches 184 run tp @p[scores={timer=0..}] 447 110 571
 execute if score @p[scores={timer=0..}] timer matches 188 run scoreboard players set rf174919 brown 0
 execute if score @p[scores={timer=0..}] timer matches 188 run execute if block 441 111 579 brown_wool run scoreboard players set rf174919 brown 1
 execute if score @p[scores={timer=0..}] timer matches 188 run scoreboard players operation rf174919 scores += rf174919 brown
@@ -920,7 +920,7 @@ execute if score @p[scores={timer=0..}] timer matches 188 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 188 run execute if score rf174919 scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"rf174919: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 571"}},{"score":{"name":"rf174919","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 188 run execute if score rf174919 scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"rf174919: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 447 110 571"}},{"score":{"name":"rf174919","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 192 run scoreboard players set Trollium scores 0
-execute if score @p[scores={timer=0..}] timer matches 192 run tp @p 575 110 59
+execute if score @p[scores={timer=0..}] timer matches 192 run tp @p[scores={timer=0..}] 575 110 59
 execute if score @p[scores={timer=0..}] timer matches 196 run scoreboard players set Trollium brown 0
 execute if score @p[scores={timer=0..}] timer matches 196 run execute if block 569 111 67 brown_wool run scoreboard players set Trollium brown 1
 execute if score @p[scores={timer=0..}] timer matches 196 run scoreboard players operation Trollium scores += Trollium brown
@@ -960,7 +960,7 @@ execute if score @p[scores={timer=0..}] timer matches 196 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 196 run execute if score Trollium scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Trollium: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 59"}},{"score":{"name":"Trollium","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 196 run execute if score Trollium scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Trollium: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 59"}},{"score":{"name":"Trollium","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 200 run scoreboard players set raphy2 scores 0
-execute if score @p[scores={timer=0..}] timer matches 200 run tp @p 575 110 187
+execute if score @p[scores={timer=0..}] timer matches 200 run tp @p[scores={timer=0..}] 575 110 187
 execute if score @p[scores={timer=0..}] timer matches 204 run scoreboard players set raphy2 brown 0
 execute if score @p[scores={timer=0..}] timer matches 204 run execute if block 569 111 195 brown_wool run scoreboard players set raphy2 brown 1
 execute if score @p[scores={timer=0..}] timer matches 204 run scoreboard players operation raphy2 scores += raphy2 brown
@@ -1000,7 +1000,7 @@ execute if score @p[scores={timer=0..}] timer matches 204 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 204 run execute if score raphy2 scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"raphy2: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 187"}},{"score":{"name":"raphy2","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 204 run execute if score raphy2 scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"raphy2: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 187"}},{"score":{"name":"raphy2","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 208 run scoreboard players set stmjk scores 0
-execute if score @p[scores={timer=0..}] timer matches 208 run tp @p 575 110 315
+execute if score @p[scores={timer=0..}] timer matches 208 run tp @p[scores={timer=0..}] 575 110 315
 execute if score @p[scores={timer=0..}] timer matches 212 run scoreboard players set stmjk brown 0
 execute if score @p[scores={timer=0..}] timer matches 212 run execute if block 569 111 323 brown_wool run scoreboard players set stmjk brown 1
 execute if score @p[scores={timer=0..}] timer matches 212 run scoreboard players operation stmjk scores += stmjk brown
@@ -1040,7 +1040,7 @@ execute if score @p[scores={timer=0..}] timer matches 212 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 212 run execute if score stmjk scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"stmjk: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 315"}},{"score":{"name":"stmjk","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 212 run execute if score stmjk scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"stmjk: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 315"}},{"score":{"name":"stmjk","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 216 run scoreboard players set Cloudberryz scores 0
-execute if score @p[scores={timer=0..}] timer matches 216 run tp @p 575 110 443
+execute if score @p[scores={timer=0..}] timer matches 216 run tp @p[scores={timer=0..}] 575 110 443
 execute if score @p[scores={timer=0..}] timer matches 220 run scoreboard players set Cloudberryz brown 0
 execute if score @p[scores={timer=0..}] timer matches 220 run execute if block 569 111 451 brown_wool run scoreboard players set Cloudberryz brown 1
 execute if score @p[scores={timer=0..}] timer matches 220 run scoreboard players operation Cloudberryz scores += Cloudberryz brown
@@ -1080,7 +1080,7 @@ execute if score @p[scores={timer=0..}] timer matches 220 run scoreboard players
 execute if score @p[scores={timer=0..}] timer matches 220 run execute if score Cloudberryz scores matches 4.. run tellraw @p[scores={timer=0..}] [{"text":"Cloudberryz: ", "color":"green", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 443"}},{"score":{"name":"Cloudberryz","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 220 run execute if score Cloudberryz scores matches ..3 run tellraw @p[scores={timer=0..}] [{"text":"Cloudberryz: ", "color":"red", "clickEvent":{"action":"run_command","value":"/tp @p 575 110 443"}},{"score":{"name":"Cloudberryz","objective":"scores"}, "color":"white"}]
 execute if score @p[scores={timer=0..}] timer matches 224 run scoreboard players set fredjoon scores 0
-execute if score @p[scores={timer=0..}] timer matches 224 run tp @p 575 110 571
+execute if score @p[scores={timer=0..}] timer matches 224 run tp @p[scores={timer=0..}] 575 110 571
 execute if score @p[scores={timer=0..}] timer matches 228 run scoreboard players set fredjoon brown 0
 execute if score @p[scores={timer=0..}] timer matches 228 run execute if block 569 111 579 brown_wool run scoreboard players set fredjoon brown 1
 execute if score @p[scores={timer=0..}] timer matches 228 run scoreboard players operation fredjoon scores += fredjoon brown
