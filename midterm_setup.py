@@ -82,7 +82,7 @@ class Rooms:
             f.write(timerString.format(interval * i))
             f.write('tp @p[scores={{timer=0..}}] {} {} {}\n'.format(player.getX(), player.getY(), player.getZ()))
             for color in constants.COLORS:
-                x = player.getX() + 5
+                x = player.getX() - 6
                 y = player.getY() + 1
                 z = player.getZ() + 8
                 f.write(timerString.format(interval * i + delay))
